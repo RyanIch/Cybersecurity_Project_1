@@ -8,7 +8,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
   - [Install-DVWA.yml](Playbooks/Install-DVWA.yml)
   - [Install-elk.yml](Playbooks/Install-elk.yml)
-  - [Install-filebeat.yml](Playbooks/Install-filebeat.yml)
+  - [Install-filebeat.yml](https://github.com/RyanIch/Cybersecurity_Project_1/blob/1994590fef016aaf570fc1f2c4e886397b1c3c6b/Playbooks/Install-filebeat.yml)
   - [Install-metricbeat.yml](Playbooks/Install-metricbeat.yml)
 
 This document contains the following details:
