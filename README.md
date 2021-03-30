@@ -6,10 +6,10 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook files may be used to install only certain pieces of it, such as Filebeat.
 
-  - Install-DVWA.yml
-  - Install-elk.yml
-  - Install-filebeat.yml
-  - Install-metricbeat.yml
+  - [Install-DVWA.yml](Playbooks/Install-DVWA.yml)
+  - [Install-elk.yml](Playbooks/Install-elk.yml)
+  - [Install-filebeat.yml](Playbooks/Install-filebeat.yml)
+  - [Install-metricbeat.yml](Playbooks/Install-metricbeat.yml)
 
 This document contains the following details:
 - Description of the Topology
@@ -102,7 +102,7 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the Install-elk.yml file to /etc/ansible/roles/Install-elk.yml
+- Copy the [Install-elk.yml](Playbooks/Install-elk) file to /etc/ansible/roles/Install-elk.yml
 - Update the hosts file to include the [elk] group and enter the ELK machine's IP followed by ansible_python_interpreter=/usr/bin/python3
   - ![Configuring_hosts.png](Images/Configuring_hosts.png)
 - Run the playbook using the command ansible-playbook Install-elk.yml, and navigate to http//[elk_server_public_ip]:5601/app/kibana in your web browser to check that the installation worked as expected.
